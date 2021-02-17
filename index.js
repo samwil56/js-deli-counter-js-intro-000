@@ -9,5 +9,5 @@ function nowServing(line) {
   if (first == undefined ) {return "There is nobody waiting to be served!"}
   else {return `Currently serving ${first}.`}
 
-  line.shift()
+  [line].shift()
 }

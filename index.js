@@ -6,7 +6,7 @@ function takeANumber(line, name) {
 
 function nowSwerving(line) {
   var first = line[0]
-  if line == [] {return "There is nobody waiting to be served!"}
+  if (line == []) {return "There is nobody waiting to be served!"}
   else {return `Currently serving ${first}.`}
   line.shift(first)
 }

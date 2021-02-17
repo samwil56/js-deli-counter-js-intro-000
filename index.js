@@ -15,9 +15,10 @@ function nowServing(line) {
 
 function currentLine(line) {
   var len = line.length -1
+  if (line[0] == undefined) { return 'The line is currently empty.'}
   for (i=0; i<= len; i+=1) {
     var position = i+1
-    if (i==0) {return 'The line is currently: '}
+    if (i = =0) {return 'The line is currently: '}
     return `${poistion}. ${line[i]}`
     if (i != len) {return ', '}
   }

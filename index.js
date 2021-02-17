@@ -17,10 +17,12 @@ function currentLine(line) {
   var len = line.length -1
   if (line[0] == undefined) { return 'The line is currently empty.'}
   var i=0
+  var str = 'The line is currently: '
   for (i=0; i<= len; i+=1) {
     var position = i+1
-    if (position == 1 ) {return 'The line is currently: '}
-    return `${poistion}. ${line[i]}`
-    if (i != len) {return ', '}
+    var person = `${position}. ${line[i]}`
+    str = str + person
+    if (i != len) {str = str + ', '}
   }
+  return str
 }
